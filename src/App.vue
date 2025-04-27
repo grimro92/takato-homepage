@@ -45,9 +45,9 @@
             <v-col cols="auto">
               <v-btn variant="flat">自己紹介ページへ</v-btn>
             </v-col>
-            <v-col cols="auto">
+            <!-- <v-col cols="auto">
               <v-btn variant="flat">脱出ゲームへ...</v-btn>
-            </v-col>
+            </v-col> -->
           </v-row>
         </div>
       </div>
@@ -92,7 +92,7 @@
           <v-col class="center-content ex-cont" cols="12">
             <div class="content-wrapper">
               <p class="p-main">海外について</p>
-              <p class="p-sub">昔から、日本以外の国に興味がありす。海外で何をしたいか、どこへ行きたいかなど。</p>
+              <p class="p-sub">日本以外の国に興味があります。海外で何をしたいか、どこへ行きたいかなど。</p>
               <div class="pad-12"></div>
               <v-btn>海外について</v-btn>
             </div>
@@ -103,7 +103,7 @@
           <v-col cols="12" md="4" order="3" order-md="1" class="center-content pt-0 pt-md-3">
             <div class="content-wrapper">
               <p class="p-main">好きなこと</p>
-              <p class="p-sub">雪が降る日のコーヒーを飲むクリスマス、憧れのダイナーなど...</p>
+              <p class="p-sub">雪が降るクリスマスに飲むコーヒー、憧れのダイナーなど...</p>
               <div class="pad-12"></div>
               <v-btn>好きなことについて</v-btn>
             </div>
@@ -151,13 +151,11 @@
     </v-main>
 
     <v-footer class="text-center d-flex flex-column">
-      <v-btn> ^ トップに戻る </v-btn>
+      <v-btn>トップに戻る </v-btn>
       <div class="pad-12"></div>
       <div class="pt-0">2025 Takato Aihara / 無断転載を禁じます</div>
     </v-footer>
 
-
-    <!-- <StageSet /> -->
   </v-app>
 
 </template>
@@ -165,22 +163,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import logoJaJpg from "@/assets/jpg/logo_ja.png";
-import hummusJpg from "@/assets/jpg/Hummus_2500x1660.jpg";
-import img0439Jpg from "@/assets/jpg/IMG_0439.jpg";
-import img0443Jpg from "@/assets/jpg/IMG_0443.jpg";
 import japanJpg from "@/assets/jpg/japan.jpg";
-import deskJpg from "@/assets/jpg/desk_3.jpg";
 import workJpg from "@/assets/jpg/work.jpg";
-import melanieJpg from "@/assets/jpg/Melanie.jpg";
-import chickenJpg from "@/assets/jpg/Chicken+Picatta+Catering.jpg";
 import mJpg from "@/assets/jpg/25402141_m.jpg";
 import christomas from "@/assets/jpg/pexels-brett-sayles-1708601.jpg";
 import diner from "@/assets/jpg/diner.jpg";
-import ypeJpg from "@/assets/jpg/Ype+Counter.jpg";
-import car from "@/assets/jpg/car_2.jpg";
 import connect from "@/assets/jpg/connect.jpg";
-import hospitalityJpg from "@/assets/jpg/Hospitality_2500x1660.jpg";
-import jukeboxJpg from "@/assets/jpg/Jukebox.jpg";
 import mailJpg from "@/assets/jpg/mail.jpg";
 
 const drawer = ref(false);
