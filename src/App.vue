@@ -1,48 +1,25 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <v-app>
+    <v-main>
+      <v-container>
+        <v-row>
+          <v-col>
+            <h1>Vuetify Test Page</h1>
+            <v-btn color="primary">Vuetify ボタン</v-btn>
+          </v-col>
+        </v-row>
+      </v-container>
+    </v-main>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-    aaab
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    </v-app>
 </template>
 
+<script setup lang="ts">
+// ... 必要に応じて他のコード ...
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+/* ... 必要に応じてスタイル ... */
+/* Vuetify のスタイルはグローバルに適用されるので、 scoped スタイルは Vuetify コンポーネント自体ではなく、
+   カスタムクラスなどに適用することが多いです */
 </style>
