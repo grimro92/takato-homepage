@@ -11,6 +11,8 @@
         "src/*"     // "src/" ディレクトリからの相対パスにマッピング
       ]
     },
+    "module": "esnext", // ★ これが正しく設定されているか確認・修正 ★
+    "lib": ["esnext", "dom"], // ★ 'esnext' や 'dom' が含まれているか確認・修正 ★
     "skipLibCheck": true // ライブラリ（node_modules内）の型定義ファイルのチェックをスキップ
     // ★ ここまで追加 ★
 
