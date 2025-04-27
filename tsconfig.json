@@ -1,5 +1,11 @@
 {
   "files": [],
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts", // .d.ts ファイルを含める
+    "src/**/*.tsx",   // TSX を使う場合
+    "src/**/*.vue"    // .vue ファイルを含める
+  ],
   "references": [
     {
       "path": "./tsconfig.node.json"

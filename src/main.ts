@@ -22,13 +22,15 @@ const vuetify = createVuetify({
 });
 // --- ここまで Vuetify の設定 ---
 
+import router from './router'; // 作成したルーター設定をインポート
+
 
 const app = createApp(App);
 
 // Vuetify プラグインをアプリケーションに登録
 app.use(vuetify);
 // 必要に応じてルーターやストアも登録
-// app.use(router);
+app.use(router);
 // app.use(pinia);
 
 
