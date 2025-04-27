@@ -1,17 +1,22 @@
 {
-  "files": [],
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.d.ts", // .d.ts ファイルを含める
-    "src/**/*.tsx",   // TSX を使う場合
-    "src/**/*.vue"    // .vue ファイルを含める
-  ],
-  "references": [
-    // {
-    //   "path": "./tsconfig.node.json"
-    // },
-    {
-      "path": "./tsconfig.app.json"
+  "compilerOptions": {
+    // ★ 既存の compilerOptions があればそのまま残します ★
+    // 例: "target": "esnext", "module": "esnext", "strict": true, ...
+    // これらの必須設定がない場合は追加が必要な可能性があります
+
+    // ★ 以下を追加 ★
+    "baseUrl": ".", // プロジェクトルートを基準にする設定
+    "paths": {      // エイリアスのマッピング設定
+      "@/*": [      // "@/" で始まるパスを...
+        "src/*"     // "src/" ディレクトリからの相対パスにマッピング
+      ]
     }
+    // ★ ここまで追加 ★
+
+    // ★ 既存の compilerOptions があればそのまま残します ★
+  },
+  "include": [
+    // ... include 設定 ...
   ]
+  // "references": [] // 以前のステップで削除済み
 }
