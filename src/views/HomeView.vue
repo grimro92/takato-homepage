@@ -10,7 +10,7 @@
       </v-row>
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">
-          <v-btn variant="flat">自己紹介ページへ</v-btn>
+          <v-btn variant="flat" to="/about">自己紹介ページへ</v-btn>
         </v-col>
         </v-row>
     </div>
