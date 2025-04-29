@@ -29,7 +29,7 @@
               <p class="p-sub">Webアプリを開発しています</p>
               <p class="p-main">仕事について</p>
               <div class="pad-12"></div>
-              <v-btn>仕事について</v-btn>
+              <v-btn to="/work">仕事について</v-btn>
             </div>
           </v-col>
         </v-row>
@@ -45,7 +45,7 @@
               <p class="p-sub">ゲーム、映画、読書など...</p>
               <p class="p-main">趣味について</p>
               <div class="pad-12"></div>
-              <v-btn>趣味について</v-btn>
+              <v-btn to="/hobby">趣味について</v-btn>
             </div>
           </v-col>
         </v-row>
@@ -58,7 +58,7 @@
           <p class="p-main">海外について</p>
           <p class="p-sub">日本以外の国に興味があります。海外で何をしたいか、どこへ行きたいかなど。</p>
           <div class="pad-12"></div>
-          <v-btn>海外について</v-btn>
+          <v-btn to="/overseas">海外について</v-btn>
         </div>
       </v-col>
     </v-row>
@@ -69,7 +69,7 @@
           <p class="p-main">好きなこと</p>
           <p class="p-sub">雪が降るクリスマスに飲むコーヒー、憧れのダイナーなど...</p>
           <div class="pad-12"></div>
-          <v-btn>好きなことについて</v-btn>
+          <v-btn to="/likes">好きなことについて</v-btn>
         </div>
       </v-col>
 
@@ -90,7 +90,7 @@
           <p class="p-main">各種リンク先</p>
           <p class="p-sub">X、GitHub、Zenn</p>
           <div class="pad-12"></div>
-          <v-btn>リンク先</v-btn>
+          <v-btn to="/links">リンク先</v-btn>
         </div>
       </v-col>
     </v-row>
@@ -101,7 +101,7 @@
           <p class="p-main">連絡先</p>
           <p class="p-sub">もし私に少しでも興味がわいたら、以下から連絡してください。</p>
           <div class="pad-12"></div>
-          <v-btn>連絡する</v-btn>
+          <v-btn to="/contact">連絡する</v-btn>
         </div>
       </v-col>
       <v-col class="pb-0 pb-md-3" cols="12" md="8" order="1" order-md="2">
