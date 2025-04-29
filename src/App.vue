@@ -36,7 +36,7 @@
     </v-main>
 
     <v-footer class="text-center d-flex flex-column">
-      <v-btn to="/">トップに戻る </v-btn>
+      <v-btn @click="scrollToTop">トップに戻る </v-btn>
       <div class="pad-12"></div>
       <div class="pt-0">2025 Takato Aihara / 無断転載を禁じます</div>
     </v-footer>
@@ -57,6 +57,13 @@ const goToHome = () => {
   if (drawer.value) { // ドロワーが開いている場合は閉じる (任意)
     drawer.value = false;
   }
+};
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0, // ページの最上部 (垂直方向の位置)
+    behavior: 'smooth' // スムーズなアニメーションでスクロール
+  });
 };
 </script>
 

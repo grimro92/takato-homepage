@@ -1,5 +1,5 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { createRouter, createWebHistory } from 'vue-router';
+import HomeView from '../views/HomeView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -45,6 +45,20 @@ const router = createRouter({
       component: () => import('../views/ContactView.vue')
     },
   ],
-})
+  // ★ ページ遷移時のスクロール挙動を定義する scrollBehavior オプションを追加 ★
+  scrollBehavior(to, from, savedPosition) {
+    // 常にページの最上部 (top: 0) にスクロールする
+    // スムーズなスクロールが必要な場合は { top: 0, behavior: 'smooth' } を返す
+    return { top: 0 };
 
-export default router
+    // もし、ブラウザのデフォルトのスクロール復元挙動を優先したい場合は
+    // savedPosition が存在するかチェックし、あればそれを返すようにします
+    // if (savedPosition) {
+    //   return savedPosition;
+    // } else {
+    //   return { top: 0 }; // 保存された位置がない場合は最上部へ
+    // }
+  },
+});
+
+export default router;

@@ -121,6 +121,36 @@
             </div>
           </div>
 
+          <div class="mb-8"> <p class="p-sub mb-4">■ 職務経歴書ダウンロード</p>
+             <p class="body-text mb-4">私の職務経歴書をダウンロードいただけます。</p>
+
+             <v-row>
+                <v-col cols="auto">
+                   <v-btn
+                     href="/download/resume/職務経歴書.docx"
+                     download="職務経歴書.docx"
+                     color="blue-grey"
+                     large
+                     class="ma-2"
+                   >
+                     <v-icon left>mdi-file-word</v-icon>
+                     Word (.docx)
+                   </v-btn>
+                </v-col>
+                 <v-col cols="auto">
+                   <v-btn
+                     href="/download/resume/職務経歴書.pdf"
+                     download="職務経歴書.pdf"
+                     color="red-darken-3"
+                     large
+                     class="ma-2"
+                   >
+                      <v-icon left>mdi-file-pdf</v-icon>
+                     PDF (.pdf)
+                   </v-btn>
+                </v-col>
+             </v-row>
+          </div>
 
           <div class="text-center mt-8">
              <v-btn color="primary" to="/" large>
@@ -213,6 +243,11 @@ ul.body-text li {
 .mb-2 { margin-bottom: 0.5rem !important; }
 .ml-6 { margin-left: 1.5rem !important; }
 /* .ml-4 { margin-left: 1rem !important; } project-entry 内で pa-4 に変更*/
+
+/* ボタン間の余白 (Vuetify ma-2 クラスも使用) */
+.ma-2 { margin: 0.5rem !important; }
+.ml-4 { margin-left: 1rem !important; }
+.mt-8 { margin-top: 2rem !important; }
 
 
 /* スマホ表示時の調整 */
