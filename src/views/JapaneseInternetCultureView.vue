@@ -156,7 +156,7 @@
             <v-row class="justify-center">
               <v-col cols="12" sm="6" md="4" class="text-center">
                 <v-btn
-                  href="https://www.2ch.sc/"
+                  href="https://www.youtube.com/watch?v=1gYm7TeViQw"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="primary"
@@ -164,12 +164,12 @@
                   size="large"
                   class="btn-link"
                 >
-                  {{ $t('jic.ninichan.title') }}
+                  {{ $t('jic.vtuber.akamikarubi3dlive') }}
                 </v-btn>
               </v-col>
               <v-col cols="12" sm="6" md="4" class="text-center">
                 <v-btn
-                  href="https://www.nicovideo.jp/"
+                  href="https://www.youtube.com/watch?v=meuHvFd55tM"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="primary"
@@ -177,12 +177,12 @@
                   size="large"
                   class="btn-link"
                 >
-                  {{ $t('jic.niconico.title') }}
+                  {{ $t('jic.vtuber.akamikarubiuta') }}
                 </v-btn>
               </v-col>
               <v-col cols="12" sm="6" md="4" class="text-center">
                 <v-btn
-                  href="https://www.youtube.com/@akamikakurumi"
+                  href="https://www.youtube.com/watch?v=z2V8U4CV6yQ&list=RDz2V8U4CV6yQ&start_radio=1"
                   target="_blank"
                   rel="noopener noreferrer"
                   color="primary"
@@ -190,7 +190,7 @@
                   size="large"
                   class="btn-link"
                 >
-                  {{ $t('jic.vtuber.akamikarubi') }}
+                  {{ $t('jic.vtuber.akamikarubiuta2') }}
                 </v-btn>
               </v-col>
             </v-row>
@@ -303,9 +303,9 @@ import vtuberPhoto4 from '@/assets/jpg/karubi.jpg';
 }
 
 .links-section {
-    background-color: #FFF8DC;
+    background-color: #CC5761;
     border-radius: 12px;
-    border: 1px solid #FFE4B5;
+    border: 1px solid yellow;
 }
 
 .btn-link {
