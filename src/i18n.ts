@@ -2,6 +2,9 @@ import { createI18n } from 'vue-i18n';
 
 const messages = {
   ja: {
+    titlebar: {
+      title: '相原隆斗のホームページ',
+    },
     nav: {
       home: 'ホーム',
       about: '自己紹介',
@@ -221,6 +224,9 @@ const messages = {
   },
 
   en: {
+    titlebar: {
+      title: 'Takuto Aihara\'s Homepage',
+    },
     nav: {
       home: 'Home',
       about: 'About',
