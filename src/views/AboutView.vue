@@ -8,34 +8,34 @@
 
       <v-col cols="12" md="7" class="mt-6 mt-md-0">
         <div class="content-wrapper pa-6">
-          <p class="p-main text-center text-md-left mb-4">自己紹介</p>
+          <p class="p-main text-center text-md-left mb-4">{{ $t('about.title') }}</p>
 
           <p class="p-sub text-center text-md-left mb-4">
-            ようこそ、自己紹介ページへお越しいただきありがとうございます！
+            {{ $t('about.welcome') }}
           </p>
 
           <p class="body-text mb-3">
-            名前：{{ name }}<br>
-            出身地：{{ hometown }}<br>
-            年齢：{{ age }}<br>
-            仕事：{{ job }}<br>
-            好きな言葉：{{ favoritewords }}
+            {{ $t('about.nameLabel') }}：{{ $t('about.name') }}<br>
+            {{ $t('about.hometownLabel') }}：{{ $t('about.hometown') }}<br>
+            {{ $t('about.ageLabel') }}：{{ $t('about.age') }}<br>
+            {{ $t('about.jobLabel') }}：{{ $t('about.job') }}<br>
+            {{ $t('about.favoriteworkdsLabel') }}：{{ $t('about.favoritewords') }}
           </p>
 
           <p class="body-text">
-            自分が知らないことを知ることが好きです。
+            {{ $t('about.description1') }}
           </p>
           <p class="body-text mb-3">
-            特に、エンジニア技術・知識・風景に興味があります。
+            {{ $t('about.description2') }}
           </p>
 
           <p class="body-text mb-6">
-            仕事内容や好きなこと・連絡先等に関して、詳しくは下のボタンからどうぞ。
+            {{ $t('about.description3') }}
           </p>
 
           <div class="text-center text-md-left">
             <v-btn color="primary" to="/" class="mt-4">
-              ホームに戻る
+              {{ $t('about.backHome') }}
             </v-btn>
           </div>
         </div>
@@ -46,18 +46,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
 // ★★★ あなたの実際の写真ファイルに合わせて修正してください ★★★
 // 例: src/assets/jpg/my_photo.jpg に置いた場合
 import myPhotoJpg from '@/assets/jpg/mycat.jpg';
-
-// 自己紹介の内容
-const name = ref('相原 隆斗'); // 例: Takato Aihara の読みを漢字で
-const hometown = ref('日本'); // 例: 東京都
-const age = ref('29歳'); // 例: 30代
-const job = ref('システムエンジニア'); // 例: システムエンジニア
-const favoritewords = ref('百聞は一見に如かず');
 
 // その他の Composition API ロジックがあればここに記述
 

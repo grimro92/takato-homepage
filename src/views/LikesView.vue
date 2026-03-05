@@ -3,14 +3,14 @@
     <v-row class="justify-center">
       <v-col cols="12" md="10">
         <div class="content-wrapper pa-6">
-          <p class="p-main text-center mb-8">私の「特別」な好き</p>
+          <p class="p-main text-center mb-8">{{$t('likes.title')}}</p>
 
           <p class="body-text text-center mb-8">
-            私の心の中で特別な位置を占める、大切な「好き」をいくつかご紹介します。これらは、私の過去と未来に深く結びついています。
+            {{$t('likes.intro')}}
           </p>
 
           <div class="theme-section christmas-theme mb-10 pa-6 elevation-2">
-            <p class="p-sub mb-4 text-center">■ クリスマス</p>
+             <p class="p-sub mb-4 text-center">{{$t('likes.christmasTitle')}}</p>
              <v-row class="align-center">
                 <v-col cols="12" md="6">
                     <div class="theme-images text-center mb-4 mb-md-0">
@@ -20,22 +20,16 @@
                 </v-col>
                 <v-col cols="12" md="6">
                     <div class="theme-text">
-                        <p class="body-text mb-3">
-                          私にとってクリスマスは、子どもの頃の温かい、楽しい思い出が一番に蘇る特別な日です。
-                        </p>
-                         <p class="body-text mb-3">
-                          雪が降り積もる日に、家族と夢中で雪合戦をしたこと。その時のきんと冷えた空気、目の前に広がる雪景色の美しさ。遊び疲れて家に帰り、ストーブの前で雪まみれの靴下を脱いで、凍える足を温めているときの、あの何とも言えない心地よさ、じんわりと体温が戻ってくる感覚。
-                        </p>
-                         <p class="body-text">
-                           そして、おばあちゃんが淹れてくれた温かいコーヒーのぬくもり。そのすべてが、私の心の中に今でも鮮明に残る、かけがえのない思い出です。クリスマスは、そんな大切な記憶を呼び起こしてくれる、私にとって特別な季節です。
-                        </p>
+                        <p class="body-text mb-3">{{$t('likes.christmasP1')}}</p>
+                         <p class="body-text mb-3">{{$t('likes.christmasP2')}}</p>
+                         <p class="body-text">{{$t('likes.christmasP3')}}</p>
                     </div>
                 </v-col>
              </v-row>
           </div>
 
           <v-divider class="my-8"></v-divider> <div class="theme-section diner-theme mb-10 pa-6 elevation-2">
-             <p class="p-sub mb-4 text-center">■ ダイナー</p>
+             <p class="p-sub mb-4 text-center">{{$t('likes.dinerTitle')}}</p>
              <v-row class="align-center">
                 <v-col cols="12" md="6" class="order-md-2">
                      <div class="theme-images text-center mb-4 mb-md-0">
@@ -45,22 +39,16 @@
                 </v-col>
                  <v-col cols="12" md="6" class="order-md-1">
                     <div class="theme-text">
-                        <p class="body-text mb-3">
-                          ダイナーは、私の長年の憧れの場所です。
-                        </p>
-                        <p class="body-text mb-3">
-                          映画『メン・イン・ブラック』で、主人公が深く考え事をしたり、大切な会話をしたりするシーンで登場するのが印象的でした。ピカピカのカウンター、レトロな雰囲気、そして気取らないジャンキーな料理。色々な背景を持つ人々が気軽に立ち寄り、親しみやすい雰囲気に包まれている場所。それが、私の抱くダイナーのイメージです。
-                        </p>
-                        <p class="body-text">
-                          特別な高級レストランではなく、日常の中に溶け込み、誰でも受け入れてくれるような、あの独特の居心地の良さにずっと憧れています。いつか本場アメリカのダイナーに行って、大きなハンバーガーとミルクシェイクを頼んでみたいです。
-                        </p>
+                        <p class="body-text mb-3">{{$t('likes.dinerP1')}}</p>
+                        <p class="body-text mb-3">{{$t('likes.dinerP2')}}</p>
+                        <p class="body-text">{{$t('likes.dinerP3')}}</p>
                     </div>
                 </v-col>
              </v-row>
           </div>
 
           <v-divider class="my-8"></v-divider> <div class="theme-section scenery-theme mb-10 pa-6 elevation-2">
-             <p class="p-sub mb-4 text-center">■ 壮大できれいな風景</p>
+             <p class="p-sub mb-4 text-center">{{$t('likes.sceneryTitle')}}</p>
              <v-row class="align-center">
                 <v-col cols="12" md="6">
                     <div class="theme-images text-center mb-4 mb-md-0">
@@ -70,15 +58,9 @@
                 </v-col>
                 <v-col cols="12" md="6">
                     <div class="theme-text">
-                        <p class="body-text mb-3">
-                          世界には、息をのむほど壮大で美しい風景がたくさんあります。写真や映像でそれらを見るたび、いつか必ずこの目で見てみたいという思いが募ります。
-                        </p>
-                         <p class="body-text mb-3">
-                          見渡す限り緑に覆われた、まるで無限に続くかのような広大な草原。一面が真っ白な雪で覆われた、静寂に包まれた冬景色。山の頂上から見下ろす、まるで海のようにおびただしい量の雲海。そして、どこまでも青く、下まで透き通って見えるような広大な海。
-                        </p>
-                         <p class="body-text">
-                           そんな場所に立つことを想像するだけで、心が震えます。これらの風景は、私にとって単なる景色ではなく、日々の努力の先にある目標であり、未来への希望そのものです。いつの日か、これらの場所を訪れることを楽しみに、今を大切に過ごしています。
-                        </p>
+                        <p class="body-text mb-3">{{$t('likes.sceneryP1')}}</p>
+                         <p class="body-text mb-3">{{$t('likes.sceneryP2')}}</p>
+                         <p class="body-text">{{$t('likes.sceneryP3')}}</p>
                     </div>
                 </v-col>
              </v-row>
@@ -86,10 +68,10 @@
 
           <div class="text-center mt-8">
              <v-btn color="primary" to="/" large>
-               ホームに戻る
+               {{$t('likes.backHome')}}
              </v-btn>
              <v-btn color="secondary" to="/overseas" large class="ml-4">
-               海外についてに戻る
+               {{$t('likes.backOverseas')}}
              </v-btn>
            </div>
 

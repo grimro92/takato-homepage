@@ -3,10 +3,10 @@
     <v-row class="justify-center">
       <v-col cols="12" md="10">
         <div class="content-wrapper pa-6">
-          <p class="p-main text-center mb-8">趣味</p>
+          <p class="p-main text-center mb-8">{{$t('hobby.title')}}</p>
 
           <p class="body-text text-center mb-8">
-            私の日々の生活を彩る、いくつかの趣味をご紹介します。
+            {{$t('hobby.intro')}}
           </p>
 
           <div class="hobby-entry mb-10">
@@ -20,10 +20,8 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" md="7">
-                <p class="p-sub mb-4 text-center text-md-left">写真を撮ること</p>
-                <p class="body-text">
-                  日常のスナップから風景、ポートレートまで、様々な被写体を撮影するのが好きです。一枚の写真に物語や感情を捉えることに面白みを感じます。特に光の使い方や構図にこだわりながら、その瞬間にしか撮れない一枚を追求しています。撮影した写真は、このホームページの他の場所でも使っているものがあります。
-                </p>
+                <p class="p-sub mb-4 text-center text-md-left">{{$t('hobby.photoTitle')}}</p>
+                <p class="body-text">{{$t('hobby.photoDesc')}}</p>
               </v-col>
             </v-row>
           </div>
@@ -39,10 +37,8 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" md="7" class="order-md-1">
-                <p class="p-sub mb-4 text-center text-md-left">パソコンゲーム</p>
-                <p class="body-text">
-                  様々なジャンルのPCゲームをプレイします。オープンワールドRPGの世界に没頭したり、戦略シミュレーションで頭を使ったり、時にはオンラインゲームで友人と協力したり。ゲームは私にとって、現実とは異なる世界を体験し、リフレッシュできる大切な時間です。最新技術を駆使したゲームのグラフィックや、練り込まれたストーリーに触れるのも刺激になります。
-                </p>
+                <p class="p-sub mb-4 text-center text-md-left">{{$t('hobby.pcgameTitle')}}</p>
+                <p class="body-text">{{$t('hobby.pcgameDesc')}}</p>
               </v-col>
             </v-row>
           </div>
@@ -58,10 +54,8 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" md="7">
-                <p class="p-sub mb-4 text-center text-md-left">きれいな風景を見ること</p>
-                <p class="body-text">
-                  国内外問わず、美しい景色を見るために旅に出るのが好きです。雄大な自然景観、歴史を感じさせる街並み、光と影が織りなす一瞬の表情など、心惹かれる風景を探し求めています。旅行先で見る風景は、私の感性を刺激し、新たな発見やリフレッシュを与えてくれます。その感動を写真に残すことも、この趣味の一部です。
-                </p>
+                <p class="p-sub mb-4 text-center text-md-left">{{$t('hobby.landscapeTitle')}}</p>
+                <p class="body-text">{{$t('hobby.landscapeDesc')}}</p>
               </v-col>
             </v-row>
           </div>
@@ -77,10 +71,8 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" md="7" class="order-md-1">
-                <p class="p-sub mb-4 text-center text-md-left">映画鑑賞</p>
-                <p class="body-text">
-                  幅広いジャンルの映画を観ます。ストーリーテリングの妙、役者の演技、映像表現、音楽など、様々な角度から映画の世界を楽しむのが好きです。時には深く考えさせられたり、時にはただただ娯楽として楽しんだり。映画から得られるインスピレーションは、日常生活やプログラミングにおけるアイデアにも繋がることがあります。
-                </p>
+                <p class="p-sub mb-4 text-center text-md-left">{{$t('hobby.movieTitle')}}</p>
+                <p class="body-text">{{$t('hobby.movieDesc')}}</p>
               </v-col>
             </v-row>
           </div>
@@ -96,10 +88,8 @@
                 ></v-img>
               </v-col>
               <v-col cols="12" md="7">
-                <p class="p-sub mb-4 text-center text-md-left">プログラム作成</p>
-                <p class="body-text">
-                  仕事以外でも、個人的な興味や学習のためにプログラムを書くのが好きです。新しい技術を試してみたり、日々のちょっとした作業を自動化するツールを作ったり、アイデアを形にしたり。趣味としてのプログラミングは、仕事とは異なる自由な発想で取り組めるため、純粋な技術的な探求心を刺激してくれます。このホームページ自体も、趣味の延長線上にあるものです。
-                </p>
+                <p class="p-sub mb-4 text-center text-md-left">{{$t('hobby.programTitle')}}</p>
+                <p class="body-text">{{$t('hobby.programDesc')}}</p>
               </v-col>
             </v-row>
           </div>
@@ -107,10 +97,10 @@
 
           <div class="text-center mt-8">
              <v-btn color="primary" to="/" large>
-               ホームに戻る
+               {{$t('hobby.backHome')}}
              </v-btn>
              <v-btn color="secondary" to="/work" large class="ml-4">
-               仕事に戻る
+               {{$t('hobby.backWork')}}
              </v-btn>
            </div>
 

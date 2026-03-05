@@ -3,21 +3,13 @@
     <v-row class="justify-center">
       <v-col cols="12" md="10">
         <div class="content-wrapper pa-6">
-          <p class="p-main text-center mb-8">海外への憧れ</p>
+          <p class="p-main text-center mb-8">{{$t('overseas.title')}}</p>
 
           <div class="body-text mb-8 ml-4">
-            <p class="mb-4">
-              こんにちは！このページでは、私の海外に対する尽きない興味と、これからの冒険についてお話ししたいと思います。
-            </p>
-            <p class="mb-4">
-              私はずっと昔から、日本を飛び出して海外へ行ってみたいという強い憧れを抱いています。異国の地で新しい人々と出会い、未知の体験をし、そこで生活してみる。日本にいるだけでは決して味わうことのできない文化や価値観の違いに触れることで、人生をもっと豊かに、もっと深くしたいと考えています。
-            </p>
-            <p class="mb-4">
-              旅行ガイドやインターネットの写真、動画を見るだけでも楽しいですが、私の本当にやりたいことは、**実際にその場所に自分の足で行き、五感を通して体験すること**です。その場の空気を感じ、人々と直接話し、その文化にどっぷり浸かってみたい。
-            </p>
-            <p>
-              将来的には、海外に拠点を置いて生活したり、バックパッカーになって世界中を気の向くままに旅したりすることが夢です。
-            </p>
+            <p class="mb-4">{{$t('overseas.intro1')}}</p>
+            <p class="mb-4">{{$t('overseas.intro2')}}</p>
+            <p class="mb-4">{{$t('overseas.intro3')}}</p>
+            <p>{{$t('overseas.intro4')}}</p>
           </div>
 
           <v-row class="mb-8 justify-center">
@@ -33,33 +25,27 @@
           </v-row>
 
           <div class="body-text mb-8 ml-4">
-             <p class="p-sub mb-4">■ これからの計画と、行きたい国</p>
-             <p class="mb-4">
-                そして、その第一歩として、<span class="font-weight-bold text-blue-darken-2">来年（2026年）1月からニュージーランドへのワーキングホリデー</span>に行く予定です！初めての長期海外滞在、とてもワクワクしています。向こうでたくさんの新しい友達を作り、様々な経験を積んで、自分の視野を広げたいと思っています。
-             </p>
-             <p class="mb-4">
-                ニュージーランドでの生活を通して、将来的にもっと色々な国を訪れたいです。今特に「行ってみたいな！」と思っている国・地域は以下の通りです。
-             </p>
+             <p class="p-sub mb-4">{{$t('overseas.planHeading')}}</p>
+             <p class="mb-4">{{$t('overseas.planPara1')}}</p>
+             <p class="mb-4">{{$t('overseas.planPara2')}}</p>
              <ul class="body-text ml-6 mb-6">
-               <li>ニュージーランド (これから！)</li>
-               <li>カナダ</li>
-               <li>オーストラリア</li>
-               <li>スイス</li>
-               <li>アメリカ</li>
-               <li>アフリカ (※特定の国というより、大陸全体に興味があります)</li>
+               <li>{{$t('overseas.countryList1')}}</li>
+               <li>{{$t('overseas.countryList2')}}</li>
+               <li>{{$t('overseas.countryList3')}}</li>
+               <li>{{$t('overseas.countryList4')}}</li>
+               <li>{{$t('overseas.countryList5')}}</li>
+               <li>{{$t('overseas.countryList6')}}</li>
              </ul>
-             <p>
-                これらの国や地域について詳しい方、行ったことがある方がいれば、ぜひお話を聞かせてください！もちろん、これらの場所以外にも、おすすめの国や旅の話があれば教えてもらえると嬉しいです。
-             </p>
+             <p>{{$t('overseas.conclusion')}}</p>
           </div>
 
 
           <div class="text-center mt-8">
              <v-btn color="primary" to="/" large>
-               ホームに戻る
+               {{$t('overseas.backHome')}}
              </v-btn>
              <v-btn color="secondary" to="/hobby" large class="ml-4">
-               趣味に戻る
+               {{$t('overseas.backHobby')}}
              </v-btn>
            </div>
 

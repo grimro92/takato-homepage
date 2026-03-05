@@ -4,13 +4,13 @@
     <div class="overlay-content pa-3">
       <v-row>
         <v-col>
-          <p class="p-main">ようこそ！</p>
-          <p class="p-sub">私はゲーム好きのシステムエンジニアです</p>
+          <p class="p-main">{{ $t('home.welcome') }}</p>
+          <p class="p-sub">{{ $t('home.subtitle') }}</p>
         </v-col>
       </v-row>
       <v-row class="d-flex align-center justify-center">
         <v-col cols="auto">
-          <v-btn variant="flat" to="/about">自己紹介ページへ</v-btn>
+          <v-btn variant="flat" to="/about">{{ $t('home.aboutButton') }}</v-btn>
         </v-col>
         </v-row>
     </div>
@@ -26,10 +26,10 @@
           </v-col>
           <v-col class="pt-0">
             <div class="bottom-text bgc-red">
-              <p class="p-sub">Webアプリを開発しています</p>
-              <p class="p-main">仕事について</p>
-              <div class="pad-12"></div>
-              <v-btn to="/work">仕事について</v-btn>
+            <p class="p-sub">{{ $t('home.workDesc') }}</p>
+            <p class="p-main">{{ $t('home.workTitle') }}</p>
+            <div class="pad-12"></div>
+            <v-btn to="/work">{{ $t('home.workButton') }}</v-btn>
             </div>
           </v-col>
         </v-row>
@@ -42,10 +42,10 @@
           </v-col>
           <v-col class="pt-0">
             <div class="bottom-text bgc-blue">
-              <p class="p-sub">ゲーム、映画、読書など...</p>
-              <p class="p-main">趣味について</p>
+              <p class="p-sub">{{ $t('home.hobbyDesc') }}</p>
+              <p class="p-main">{{ $t('home.hobbyTitle') }}</p>
               <div class="pad-12"></div>
-              <v-btn to="/hobby">趣味について</v-btn>
+              <v-btn to="/hobby">{{ $t('home.hobbyButton') }}</v-btn>
             </div>
           </v-col>
         </v-row>
@@ -55,10 +55,10 @@
     <v-row class="text-center">
       <v-col class="center-content ex-cont" cols="12">
         <div class="content-wrapper">
-          <p class="p-main">海外について</p>
-          <p class="p-sub">日本以外の国に興味があります。海外で何をしたいか、どこへ行きたいかなど。</p>
+          <p class="p-main">{{ $t('home.overseasTitle') }}</p>
+          <p class="p-sub">{{ $t('home.overseasDesc') }}</p>
           <div class="pad-12"></div>
-          <v-btn to="/overseas">海外について</v-btn>
+          <v-btn to="/overseas">{{ $t('home.overseasButton') }}</v-btn>
         </div>
       </v-col>
     </v-row>
@@ -66,10 +66,10 @@
     <v-row>
       <v-col cols="12" md="4" order="3" order-md="1" class="center-content pt-0 pt-md-3">
         <div class="content-wrapper">
-          <p class="p-main">好きなこと</p>
-          <p class="p-sub">雪が降るクリスマスに飲むコーヒー、憧れのダイナーなど...</p>
+          <p class="p-main">{{ $t('home.likesTitle') }}</p>
+          <p class="p-sub">{{ $t('home.likesDesc') }}</p>
           <div class="pad-12"></div>
-          <v-btn to="/likes">好きなことについて</v-btn>
+          <v-btn to="/likes">{{ $t('home.likesButton') }}</v-btn>
         </div>
       </v-col>
 
@@ -81,16 +81,28 @@
       </v-col>
     </v-row>
 
+    <!-- 日本のインターネット文化 セクション -->
+    <v-row class="text-center">
+      <v-col class="center-content ex-cont" cols="12">
+        <div class="content-wrapper">
+          <p class="p-main">{{ $t('home.jicTitle') }}</p>
+          <p class="p-sub">{{ $t('home.jicDesc') }}</p>
+          <div class="pad-12"></div>
+          <v-btn to="/jic">{{ $t('home.jicButton') }}</v-btn>
+        </div>
+      </v-col>
+    </v-row>
+
     <v-row>
       <v-col class="pb-0 pb-md-3" cols="12" md="8" order="1" order-md="1">
         <v-img :src="connect" position="bottom" max-height="400px" class="bg-grey-lighten-2" cover></v-img>
       </v-col>
       <v-col class="center-content pt-0 pt-md-3" cols="12" md="4" order="2" order-md="2">
         <div class="content-wrapper">
-          <p class="p-main">各種リンク先</p>
-          <p class="p-sub">X、GitHub、Zenn</p>
+          <p class="p-main">{{ $t('home.linksTitle') }}</p>
+          <p class="p-sub">{{ $t('home.linksDesc') }}</p>
           <div class="pad-12"></div>
-          <v-btn to="/links">リンク先</v-btn>
+          <v-btn to="/links">{{ $t('home.linksButton') }}</v-btn>
         </div>
       </v-col>
     </v-row>
@@ -98,10 +110,10 @@
     <v-row>
       <v-col class="center-content pt-0 pt-md-3" cols="12" md="4" order="2" order-md="1">
         <div class="content-wrapper">
-          <p class="p-main">連絡先</p>
-          <p class="p-sub">もし私に少しでも興味がわいたら、以下から連絡してください。</p>
+          <p class="p-main">{{ $t('home.contactTitle') }}</p>
+          <p class="p-sub">{{ $t('home.contactDesc') }}</p>
           <div class="pad-12"></div>
-          <v-btn to="/contact">連絡する</v-btn>
+          <v-btn to="/contact">{{ $t('home.contactButton') }}</v-btn>
         </div>
       </v-col>
       <v-col class="pb-0 pb-md-3" cols="12" md="8" order="1" order-md="2">

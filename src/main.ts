@@ -1,6 +1,7 @@
 import { createApp } from 'vue';
 import App from './App.vue';
 import router from './router'; // Vue Router (既に存在するはず)
+import i18n from './i18n'; // vue-i18n
 // import { createPinia } from 'pinia'
 
 // --- ここから Vuetify のインポートと設定 ---
@@ -26,8 +27,9 @@ const vuetify = createVuetify({
 
 const app = createApp(App);
 
-// Vue Router と Pinia は既に登録済みのはず
+// Vue Router と i18n を登録
 app.use(router);
+app.use(i18n);
 // app.use(createPinia())
 
 // ★ Vuetify プラグインをアプリケーションに登録 ★

@@ -3,10 +3,10 @@
     <v-row class="justify-center">
       <v-col cols="12" md="8">
         <div class="content-wrapper pa-6">
-          <p class="p-main text-center mb-8">各種リンク</p>
+          <p class="p-main text-center mb-8">{{$t('links.title')}}</p>
 
           <p class="body-text text-center mb-8">
-            私のオンラインでの活動や情報発信はこちらからご覧いただけます。
+            {{$t('links.intro')}}
           </p>
 
           <v-row class="justify-center">
@@ -55,10 +55,10 @@
 
           <div class="text-center mt-8">
              <v-btn color="primary" to="/" large>
-               ホームに戻る
+               {{$t('links.backHome')}}
              </v-btn>
               <v-btn color="secondary" to="/likes" large class="ml-4">
-               好きなこと に戻る
+               {{$t('links.backLikes')}}
              </v-btn>
            </div>
 

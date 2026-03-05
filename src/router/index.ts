@@ -35,6 +35,11 @@ const router = createRouter({
       component: () => import('../views/LikesView.vue'),
     },
     {
+      path: '/jic',
+      name: 'JapaneseInternetCulture',
+      component: () => import('../views/JapaneseInternetCultureView.vue'),
+    },
+    {
       path: '/links',
       name: 'Links',
       component: () => import('../views/LinksView.vue'),

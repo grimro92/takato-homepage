@@ -2,10 +2,10 @@
   <v-container class="contact-container py-12">
     <v-row class="justify-center">
       <v-col cols="12" md="8">
-        <div class="content-wrapper pa-6 text-center"> <p class="p-main mb-8">お問い合わせ</p>
+        <div class="content-wrapper pa-6 text-center"> <p class="p-main mb-8">{{$t('contact.title')}}</p>
 
           <p class="body-text mb-6">
-            私へのご連絡はこちらのメールアドレスにお願いいたします。
+            {{$t('contact.instruction1')}}
           </p>
 
           <p class="p-sub mb-8">
@@ -13,16 +13,16 @@
           </p>
 
           <p class="body-text">
-            ※ スパム対策のため、お手数ですが上記アドレスをコピー＆ペーストしてご利用ください。
+            {{$t('contact.instruction2')}}
           </p>
 
 
           <div class="text-center mt-8">
              <v-btn color="primary" to="/" large>
-               ホームに戻る
+               {{$t('contact.backHome')}}
              </v-btn>
               <v-btn color="secondary" to="/links" large class="ml-4">
-               各種リンク に戻る
+               {{$t('contact.backLinks')}}
              </v-btn>
            </div>
 
